@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header {
+  position: fixed;
+  background-color: #2d336b;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  padding: 25px 12%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 60px;
+  color: white;
+  transition: 0.4s; /*hover karne k "n" time baad colour change hoga */
+  font-weight: 700;
+}
+.logo:hover {
+  color: #a9b5df;
+  text-shadow: 0 0 1px #a9b5df;
+  transform: scale(1.1); /*text uchalta hai bahar ki trf*/
+}
+span {
+  color: #3c4b80;
+}
+.navbar a {
+  font-size: 18px;
+  color: white;
+  margin: 0 25px;
+  border-bottom: 3px solid transparent;
+  transition: 0.4s;
+}
+.navbar a:hover,
+.navbar a :active {
+  color: #a9b5df;
+  border-bottom: 3px solid #8b97c3;
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7em;
+  padding: 30px;
+}
+.home-content {
+  max-width: 800px;
+}
+.home-content h3 {
+  font-size: 42px;
+}
+.home-content h1 {
+  font-size: 62px;
+  line-height: 1.2;
+}
+.home-content p {
+  font-size: 18px;
+  margin: 25px 0 30px;
+}
+
+.btn-box {
+  width: 345;
+  display: flex;
+  gap: 2em;
+}
+
+.btn-1 {
+  padding: 15px 28px;
+  background-color: #fff2f2;
+  color: rgb(97, 124, 190);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-1:hover {
+  background-color: white;
+  color: #8b97c3;
+  border: 2px solid #8b97c3;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #8b97c3;
+}
+.btn-2 {
+  padding: 15px 28px;
+  background-color: #fff2f2;
+  color: rgb(97, 124, 190);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-2:hover {
+  background-color: white;
+  color: #8b97c3;
+  border: 2px solid #8b97c3;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #8b97c3;
+}
+.img-box img {
+  border-radius: 50%;
+  width: 210px;
+  box-shadow: 0 0 25px #8b97c3, 0 0 50px #8b97c3;
+}
+::-webkit-scrollbar {
+  width: 20px; /* width of scrollbar  */
+  background-color: #8b97c3;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2d336b; /* track ka backgroun*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #544f4f; /*  color of scroll bar */
+  border-radius: 20px; /* scrollbar k corner ko gol krne k liye */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333; /* hover karne pe colour change kre  */
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 0%;
+  margin: 10vw;
+  gap: 10em;
+
+  flex-direction: row-reverse;
+}
+.about-img img {
+  position: relative;
+  width: auto;
+  box-shadow: 0 0 25px #8b97c3, 0 0 50px #8b97c3;
+  border-radius: 50%;
+}
+.about-content h2 {
+  text-align: left;
+  font-size: 52px;
+}
+.about-content h3 {
+  font-size: 62px;
+}
+
+.about-content p {
+  font-size: 20px;
+  margin: 2em 0 3em;
+}
+
+.skill .skill-heading {
+  font-size: 52px;
+  text-align: left;
+   
+  padding:0 12% ;
+}
+.skill .skill-box {
+  border: 2px solid #3c4b80;
+  box-shadow: 0 0 10px #3c4b80;
+  border-radius: 8px;
+  display: inline-flex;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 28px;background-color: #fff2f2;
+  
+}
+ 
+
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 56px;
+}
+.contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-form .input-box input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.827);
+  background-color: #889dd6;
+  border-radius: 8px;
+  margin: 1rem 0;
+  resize: none;
+}
+.contact-form .btn{
+    padding: 15px 28px;
+    background-color: #fbe3e3;
+    color: rgb(97, 124, 190);
+    border: 2px solid #889dd6;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+.contact-form .btn:hover {
+    background-color: white;
+    color: #8b97c3;
+    border: 2px solid #8b97c3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #8b97c3;
+    transform: scale(1.1);
+  }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(0, 0, 0);
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+.footer .social a {
+  font-size: 24px;
+  color: white;
+  border: 2px solid #2d336b;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  box-shadow: 0 0 10px #8b97c3, 0 0 10px #8b97c3;
+  transition: 0.3s;
+}
+.footer .social a:hover {
+  transform: scale(1.2);
+  color: #3c4b80;
+  border: 2px solid #2d336b;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+.footer ul li a:hover {
+  border-bottom: 3px solid #2d336b;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
